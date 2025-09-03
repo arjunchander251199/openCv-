@@ -1,0 +1,91 @@
+1>Image - 2d grid (matrix/table) of pixel values
+2>Pixel -smallest unit of image
+A pixel actually looks like a single tiny dot on the screen, but inside it has 3 sub-pixels:
+
+🔴 Red
+🟢 Green
+🔵 Blue
+
+This is called RGB (Red-Green-Blue) color model.
+
+👉 Why only 3?
+
+Human eyes have 3 types of color receptors (cones) sensitive to red, green, and blue light.
+
+By combining these 3 in different intensities (0–255 each), we can make 16.7 million colors (256 × 256 × 256).
+
+For example:
+
+(255, 0, 0) → pure red
+
+(0, 255, 0) → pure green
+
+(0, 0, 255) → pure blue
+
+(255, 255, 255) → white
+
+(0, 0, 0) → black
+
+
+
+3>width - number of pixels in a row 1920
+
+
+4>height - number of pixels in a column 1080
+
+
+5> color Channels -👉 A color image = made of many pixels
+👉 Each pixel = has 3 values (3 channels) → Blue, Green, Red in OpenCV
+
+Example:
+
+Suppose image size = 1920 × 1080
+
+Total pixels = 1920 × 1080 ≈ 2 million pixels
+
+Each pixel = [B, G, R]
+
+So , (height, width, channels)
+= (1080, 1920, 3)
+
+
+Visualization:
+
+One pixel → [120, 50, 200]
+
+Blue = 120
+
+Green = 50
+
+Red = 200
+
+When all pixels are combined → you see the full photo.
+
+
+
+⚫ Grayscale Image
+
+Each pixel = 1 value only → intensity (brightness).
+
+Shape → (height, width) (or (height, width, 1) if channel axis is kept).
+
+
+6>Image Formats - 
+jpg -small file sixe , loose quality ,compressed
+png -little bigger file size , high quality ,compressed
+bmp -large file size , high quality ,uncompressed
+tiff -larger file size , Super high quality ,uncompressed -Scientific image format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
