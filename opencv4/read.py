@@ -12,7 +12,7 @@
 
 import cv2 
 #video capture means open camera/video file
-# directly put the video file path , avi - audio video interleaved , mp4 - media player classic 4
+# directly put the video file path , avi - audio video interleaved , mp4 - media player classic 4 /compression levels/os support
 #0 = First camera (default/built-in webcam)
 #1 = Second camera (external USB camera, second built-in camera, etc.)
 #2 = Third camera device
@@ -34,7 +34,7 @@ while(True):
     ret, frame = cap.read()
     if ret == True:
         # Display the resulting frame
-        cv2.imshow('Frame',frame)
+        cv2.imshow('Frame window',frame)
 
         #0 means frame will be updated in the window only when press key
         #1 means every 1 millisecond frame will be updated in window
