@@ -20,7 +20,7 @@ frame_width=int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height=int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 codec=cv2.VideoWriter_fourcc(*'mp4v')
-#codec = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
+# codec = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
 
 #storing write fucntion in varibale called recorded 
 recorder = cv2.VideoWriter('output.mp4',codec ,30,(frame_width,frame_height))
