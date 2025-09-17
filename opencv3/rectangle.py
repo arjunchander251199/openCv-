@@ -9,7 +9,7 @@ pt1=(100,100)
 pt2=(1000,1000)
 
 color = (255,0,0) #BGR
-thickness = 2 #-1 for filling the rectangle
+thickness = -1 #-1 for filling the rectangle
 
 if img is not None:
     cv2.rectangle(img,pt1,pt2,color,thickness)

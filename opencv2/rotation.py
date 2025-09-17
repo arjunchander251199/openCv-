@@ -9,7 +9,7 @@ else:
 
     center=(img.shape[1]//2,img.shape[0]//2)
     #forumla to calcute how each pixel should move when rotated(recipe)
-    Matrix=cv2.getRotationMatrix2D(center,90,1)#center, rotation angle, scale(more scale more zoomed)
+    Matrix=cv2.getRotationMatrix2D(center,90,-10)#center, rotation angle, scale(more scale more zoomed)
   
 
   #90 - anticlockwise

@@ -14,7 +14,7 @@ img = cv2.imread('flower.jpg',2)
 #less than threshold 1 is black (noise)
 #greater than threshold 2 is white (strong edge)
 #between threshold 1 and 2 is white if its a contected to strong edge or black if its not
-edges = cv2.Canny(img,50,100)
+edges = cv2.Canny(img,30,60)
 
 cv2.imshow('original',img)
 cv2.imshow('edges',edges)

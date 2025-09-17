@@ -13,7 +13,7 @@ img = cv2.imread('image1.jpeg')
 
 # Define sharpening kernel
 kernel = np.array([[ 0, -1,  0],
-                   [-1,  8, -1],
+                   [-1,  10, -1],
                    [ 0, -1,  0]])
 
 # Apply the kernel to the image

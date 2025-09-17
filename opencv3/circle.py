@@ -7,7 +7,7 @@ pt1=(500,500)
 
 radius = 300
 color = (255,0,0) #BGR
-thickness = -1 #-1 for filling the circle
+thickness = 20 #-1 for filling the circle
 
 if img is not None:
     cv2.circle(img,pt1,radius,color,thickness)

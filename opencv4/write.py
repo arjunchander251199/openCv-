@@ -16,14 +16,14 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 #frame width and height . store is as int as wee need whole number , open cv needs whole number
-frame_width=int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-frame_height=int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+frame_width=int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) 
+frame_height=int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) 
 
-codec=cv2.VideoWriter_fourcc(*'mp4v')
+codec=cv2.VideoWriter_fourcc(*'mp4v') #mp4v - mp4 video
 # codec = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
 
 #storing write fucntion in varibale called recorded 
-recorder = cv2.VideoWriter('output.mp4',codec ,30,(frame_width,frame_height))
+recorder = cv2.VideoWriter('output.mp4',codec,30,(frame_width,frame_height))
 
 while True:
     ret , frame = cap.read()

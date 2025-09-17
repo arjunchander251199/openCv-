@@ -1,5 +1,5 @@
 #In image processing, a video is a sequence of images (frames) displayed rapidly one after another, which gives the perception of continuous motion.
-#on an average its 30fps to 60fps
+#on an average its 30fps to 60fps - frames per second 
 
 #1 frame one image , mulptiple frame makes a video
 
@@ -18,7 +18,7 @@ import cv2
 #2 = Third camera device
 #3 = Fourth camera device
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0) ##turn on the web 
 
 while(True):
 
@@ -31,7 +31,7 @@ while(True):
     # [[255, 255,   0], [  0, 255, 255], [255,   0, 255]],  # Row 2
     # [[128, 128, 128], [ 64,  64,  64], [192, 192, 192]]   # Row 3
     
-    ret, frame = cap.read()
+    ret, frame = cap.read()  
     if ret == True:
         # Display the resulting frame
         cv2.imshow('Frame window',frame)
@@ -46,6 +46,7 @@ while(True):
         #if no key is pressed return -1 and runs the next frame
         #ord - means ordinal gives ascii value of a key q=113 , Q=81 ,a=97 , computer only understands ascii values .
         #example 0x00000113 - 0xFF makes it 113 (mac , windows ) -may return a large interger
+                     113               113
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     else:

@@ -4,7 +4,7 @@ import cv2
 #1 -flag for color image
 #2 -flag for grayscale image
 #3 -flag for any type of image
-img = cv2.imread('image1.jpeg')
+img = cv2.imread('image1.jpeg',)
 
 
 if img is None:

@@ -10,7 +10,7 @@ pt1=(100,100)
 pt2=(1000,1000)
 
 
-color = (255,0,0) #BGR
+color = (255,0,0) #BGR 
 thickness = 2
 
 
@@ -18,8 +18,8 @@ if img is not None:
     cv2.line(img,pt1,pt2,color,thickness)
 
     cv2.imshow('image',img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()  
+    cv2.waitKey(0) #2sec 
+    cv2.destroyAllWindows()  #free up memory /ram 
 
 else:
     print("No image")
